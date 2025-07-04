@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İbrahimGPT Web Arayüzü</title>
+</head>
+<body style="font-family: Arial; padding: 40px;">
+    <h2>İbrahimGPT</h2>
+    <form method="POST">
+        <textarea name="prompt" rows="4" cols="60" placeholder="Bir şeyler sor..."></textarea><br><br>
+        <button type="submit">Gönder</button>
+    </form>
+    {% if cevap %}
+        <h3>Cevap:</h3>
+        <div style="white-space: pre-wrap;">{{ cevap }}</div>
+    {% endif %}
+</body>
+</html>
